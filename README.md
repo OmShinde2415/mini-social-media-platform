@@ -1,94 +1,54 @@
 # Mini Social Media Platform
 
-Beginner-friendly full-stack social media mini project.
+A full-stack mini social media application built using Node.js, Express, MongoDB Atlas, and Vanilla JavaScript.
 
-## Tech Stack
-- Frontend: HTML, CSS, Vanilla JavaScript
-- Backend: Node.js + Express.js
-- Database: MongoDB + Mongoose
-- Authentication: JWT + bcrypt password hashing
+This project includes core social networking features like authentication, posts, comments, likes, and follow/unfollow functionality.
 
-## Project Structure
-```
-.
-|-- server.js
-|-- config/
-|   `-- db.js
-|-- controllers/
-|   |-- authController.js
-|   |-- userController.js
-|   `-- postController.js
-|-- middleware/
-|   `-- authMiddleware.js
-|-- models/
-|   |-- User.js
-|   `-- Post.js
-|-- routes/
-|   |-- authRoutes.js
-|   |-- userRoutes.js
-|   `-- postRoutes.js
-|-- frontend/
-|   |-- index.html
-|   |-- dashboard.html
-|   |-- profile.html
-|   |-- css/style.css
-|   `-- js/
-|       |-- api.js
-|       |-- auth.js
-|       |-- dashboard.js
-|       `-- profile.js
-|-- .env.example
-`-- package.json
-```
+---
 
-## Setup Instructions
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Create `.env` file from `.env.example`:
-   ```bash
-   cp .env.example .env
-   ```
-   On Windows PowerShell:
-   ```powershell
-   Copy-Item .env.example .env
-   ```
-3. Update `.env` values:
-   - `MONGO_URI` (your MongoDB connection string)
-   - `JWT_SECRET` (any strong secret)
-4. Start server:
-   ```bash
-   npm run dev
-   ```
-   or
-   ```bash
-   npm start
-   ```
-5. Open app in browser:
-   - `http://localhost:5000`
+## 🚀 Features
 
-## API Endpoints
-### Auth
-- `POST /api/auth/register`
-- `POST /api/auth/login`
-- `POST /api/auth/logout` (protected)
+- User Registration & Login (JWT Authentication)
+- Create, Edit & Delete Posts
+- Like & Comment on Posts
+- Follow / Unfollow Users
+- User Profile with Bio & Profile Picture
+- Protected REST APIs
+- MongoDB Atlas Cloud Database
 
-### Users
-- `GET /api/users/:id` (protected)
-- `PUT /api/users/me/update` (protected)
-- `PUT /api/users/:id/follow` (protected)
+---
 
-### Posts
-- `GET /api/posts` (protected)
-- `POST /api/posts` (protected)
-- `PUT /api/posts/:id` (protected, owner only)
-- `DELETE /api/posts/:id` (protected, owner only)
-- `PUT /api/posts/:id/like` (protected)
-- `POST /api/posts/:id/comment` (protected)
+## 🛠 Tech Stack
 
-## Notes for Beginners
-- JWT token is stored in browser `localStorage`.
-- Protected API calls send `Authorization: Bearer <token>` header.
-- Logout in this project means deleting token from frontend storage.
-- Profile picture and post image are URL strings (not file upload).
+Frontend: HTML, CSS, JavaScript  
+Backend: Node.js, Express.js  
+Database: MongoDB (Mongoose)  
+Authentication: JWT & bcrypt
+
+---
+
+## 📸 Screenshots
+
+![Login Page](screenshots/login.png)
+![Dashboard](screenshots/dashboard.png)
+![Profile Page](screenshots/profile.png)
+![Login Page](screenshots/comments.png)
+![Login Page](screenshots/posting.png)
+![Login Page](screenshots/posts.png)
+
+---
+
+## ⚙️ Run Locally
+
+1. Clone the repository  
+2. Run `npm install`  
+3. Create `.env` file from `.env.example`  
+4. Add your MongoDB Atlas connection string  
+5. Run `npm run dev`  
+6. Open `http://localhost:5000`
+
+---
+
+## 👨‍💻 Author
+
+Developed by Om Shinde as part of an internship project.
