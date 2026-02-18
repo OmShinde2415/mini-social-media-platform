@@ -28,12 +28,17 @@ Authentication: JWT & bcrypt
 ---
 
 ## 📸 Screenshots
-
+ ##Login Page
 ![Login Page](screenshots/login.png)
+ ##dashboard
 ![Dashboard](screenshots/dashboard.png)
+##profile
 ![Profile Page](screenshots/profile.png)
+##comments
 ![Login Page](screenshots/comments.png)
+##posting process
 ![Login Page](screenshots/posting.png)
+##posts
 ![Login Page](screenshots/posts.png)
 
 ---
