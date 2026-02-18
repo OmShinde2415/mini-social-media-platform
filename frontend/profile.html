@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Social - Profile</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>My Profile</h1>
+      <div class="topbar-actions">
+        <a href="dashboard.html" class="btn-link">Back to Feed</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="profileCard" class="card"></section>
+
+      <section class="card">
+        <h2>Edit Profile</h2>
+        <form id="profileForm">
+          <textarea id="bio" placeholder="Your bio"></textarea>
+          <input type="text" id="profilePicture" placeholder="Profile picture URL" />
+          <button type="submit">Save Profile</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Search User by ID</h2>
+        <form id="searchUserForm" class="card">
+          <input type="text" id="searchUserId" placeholder="Enter user ID" required />
+          <button type="submit">View User</button>
+        </form>
+        <div id="searchedUser" class="card"></div>
+      </section>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/profile.js"></script>
+  </body>
+</html>

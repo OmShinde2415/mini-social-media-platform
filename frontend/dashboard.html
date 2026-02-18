@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Social - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Mini Social Feed</h1>
+      <div class="topbar-actions">
+        <a href="profile.html" class="btn-link">My Profile</a>
+        <button id="logoutBtn" class="danger">Logout</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Create Post</h2>
+        <form id="postForm">
+          <textarea id="postContent" placeholder="What's on your mind?" required></textarea>
+          <input type="text" id="postImageUrl" placeholder="Optional image URL" />
+          <button type="submit">Post</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>All Posts</h2>
+        <div id="postsContainer" class="posts"></div>
+      </section>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
